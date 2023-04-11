@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+$es-main-color:#df0586;
+$es-teal:#029187;
+$es-dark-main: #ad0563;
+$es-blue: #2ebdec;
+$es-grey: #dbf1ef;
+
+@keyframes es-pulse{
+    0%{
+       transform: scale(.95);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(.95);
+    }
+}
+
+@keyframes es-spray{
+    0%{
+       transform: translateY(0);
+       opacity: 0;
+    }
+    20%{
+        opacity: 1;
+     }
+    100%{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+}
+@keyframes es-hero{
+    0%{
+       transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-1deg);
+     }
+    
+     75%{
+        transform: rotate(1deg);
+     }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+#es-nasic.es-nasic{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 998px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    background: $es-main-color;
+
+    html,
+    body {
+    margin: 0;
+    padding: 0;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+    img{
+        max-width: 100%;
+    }
+    .es-kv{
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-image: none;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        &__logo{
+            position: absolute;
+            top:0;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            max-width: 150px;
+
+        }
+        &__productCtn{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        &__heroCtn{
+            display: none;
+            animation: es-hero 4s infinite;
+        }
+        
+        &__contentCtn{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0px;
+            z-index: 2;
+            position: relative;
+        }
+        &__title{
+            max-width: 320px;
+        }
+        &__subtitle{
+            font-weight: 700;
+            max-width: 320px;
+            text-align: center;
+            transform: rotate(-5deg);
+            line-height: 1.2;
+            margin-top: 0px;
+        }
+        &__nasicCtn{
+            position: relative;
+        }
+        &__nasicSpray{
+            position: absolute;
+            top:-60px;
+            left: 15px;
+            animation: es-spray 3s infinite;
+        }
+    }
+    .es-how{
+        padding: 20px;
+        &__title{
+            font-size: 40px;
+            font-weight: 800;
+            text-align: center;
+        }
+        &__ctn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__single{
+            padding: 20px;
+            max-width: 320px;
+            text-align: center;
+            background-color: $es-dark-main;
+            clip-path: polygon(0 1%, 100% 0%, 89% 100%, 5% 100%);
+            &--dark{
+                margin-bottom: -20px;
+            }
+            &--teal{
+                background-color: $es-teal;
+                margin-top: -20px;
+            }
+        }
+        &__text{
+            font-size: 25px;
+            font-weight: 800;
+        }
+        &__plus{
+            z-index: 2;
+            position: relative;
+            animation: es-pulse 2s infinite;
+        }
+    }
+    .es-benefits{
+        position: relative;
+        &__mainCtn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        &__imgCtn{
+            order: 2;
+            margin-top: -70px;
+        }
+        &__listCtn{
+            order: 1;
+            min-width: 320px;
+            margin-bottom: -50px;
+        }
+        &__cloud{
+            margin-top: -300px;
+        }
+        &__listItem{
+            margin: 20px;
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transition: .4s ease-in-out;
+            &:hover{
+                margin-left: -5px;
+            }
+        }
+        &__desc{
+            span{
+                font-weight: 800;
+            }
+        }
+        &__number{
+            background-color: #fff;
+            color: $es-main-color;
+            padding: 5px 11px;
+            margin-right: 20px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 800;
+        }
+    }
+    .es-ingr{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $es-grey;
+        margin-top: -10px;
+        padding: 20px 0;
+        &__content{
+            padding: 20px;
+        }
+        &__desc{
+            transform: rotate(-5deg);
+            color: $es-teal;
+            span{
+                font-weight: 800;
+            }
+        }
+    }
+    .es-cross{
+        background-color: $es-grey;
+        margin-top: -5px;
+        &__title{
+            margin: 0;
+            padding: 0;
+            color: $es-main-color;
+            font-size: 30px;
+            font-weight: 800;
+            text-align: center;
+        }
+        &__mainCtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 40px;
+        margin-top: 30px;
+        }
+        &__single{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        &__imgCtn{
+            position: relative;
+        }
+        &__textCtn{
+            padding: 5px;
+            background-image: url(./img/teal-bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            &--kids{
+                background-image: url(./img/blue-bg.png);
+                flex-direction: column;
+                justify-content: flex-start;
+                top:-40px;
+                left: -40px;
+            }
+        }
+        &__text{
+            font-weight: 800;
+            margin: 0;
+            span{
+                font-size: 25px;
+            }
+        }
+        &__usage{
+            color: $es-main-color;
+            font-weight: 800;
+            font-size: 20px;
+            text-align: center;
+            span{
+                font-size: 16px;
+            }
+        }
+        &__linkCtn{
+            margin-top: 40px;
+        }
+        &__link{
+            background-color: $es-teal;
+            transform: rotate(-5deg);
+            clip-path: polygon(0 1%, 100% 0%, 89% 100%, 5% 100%);
+            width: 250px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 800;
+            font-size: 20px;
+            transition: .4s ease-in-out;
+            &--kids{
+                background-color: $es-blue;
+            }
+            &:hover{
+                transform: rotate(2deg);
+            }
+        }
+        &__starsCtn{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: -30px;
+        }
+        &__stars{
+            margin-right: 50px;
+        }
+    }
+    .es-footer{
+        padding: 20px;
+        margin-top: -10px;
+        background-color: $es-main-color;
+        &__claim{
+            font-size: 14px;
+            margin: 30px 0;
+            line-height: 1.4;
+            &--big{
+                font-size: 18px;
+                padding: 40px 0;
+                text-align: center;
+                line-height: 1.4;
+            }
+        }
+        &__logo{
+            width: 150px;
+        }
+    }
+    
+  @media screen and (min-width: 900px){
+    .es-kv{
+        background-image: url(./img/kv-shadow.png);
+        flex-direction: row;
+        align-items: flex-end;
+        &__heroCtn{
+            display: block; 
+        }
+        &__contentCtn{
+            margin-left: -200px;
+            margin-bottom: 100px;
+            
+        }
+        &__title{
+            max-width: 400px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+        }
+        &__productCtn{
+            margin-top: 280px;
+        }
+        &__nasic{
+            max-width: 200px;
+            margin-right: 50px;
+        }
+        &__nasicSpray{
+            top:-70px;
+            left: 10px;
+        }
+    }
+    .es-how{
+        transform: rotate(-5deg);
+        &__title{
+            text-align: left;
+            margin-left: 50px;
+        }
+        &__ctn{
+            flex-direction: row;
+        }
+        &__single{
+            max-width: 500px;
+            width: 450px;
+            &--dark{
+                margin-right: -50px;
+                margin-bottom: 0;
+            }
+            &--teal{
+                margin-left: -30px;
+                margin-top: 0;
+            }
+        }
+        
+    }
+    .es-benefits{
+        &__mainCtn{
+            flex-direction: row;
+        }
+        &__imgCtn{
+            order: 1;
+            margin-top: 0;
+        }
+        &__listCtn{
+            order: 2;
+            min-width: 450px;
+            margin-bottom: 0px;
+        }
+    }
+    .es-ingr{
+        flex-direction: row;
+    }
+    .es-cross{
+        &__title{    
+            text-align: left;
+            margin-left: 50px;
+        }
+        &__mainCtn{
+            flex-direction: row;
+        }
+        &__textCtn{
+            width: 150px;
+            height: 150px;
+            bottom: 0;
+            left: -20px;
+            &--kids{
+                top:-40px;
+                left: -70px;
+            }
+        }
+        &__text{
+            font-weight: 800;
+            margin: 0;
+            span{
+                font-size: 40px;
+            }
+        }
+    }
+    .es-footer{
+        padding: 40px;
+        &__claim{
+            font-size: 14px;
+            &--big{
+                font-size: 25px;
+                padding: 40px 0;
+                text-align: left;
+            }
+        }
+    }
+  }
+}
