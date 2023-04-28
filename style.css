@@ -47,7 +47,7 @@
   padding: 0;
   overflow: hidden;
   color: #fff;
-  background: #df0586;
+  background: #27b0e6;
 }
 #es-nasic.es-nasic html,
 #es-nasic.es-nasic body {
@@ -138,7 +138,7 @@
   padding: 20px;
   max-width: 320px;
   text-align: center;
-  background-color: #ad0563;
+  background-color: #df0586;
   -webkit-clip-path: polygon(0 1%, 100% 0%, 89% 100%, 5% 100%);
           clip-path: polygon(0 1%, 100% 0%, 89% 100%, 5% 100%);
 }
@@ -206,7 +206,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #dbf1ef;
+  background-color: #ffecf9;
   margin-top: -10px;
   padding: 20px 0;
 }
@@ -221,13 +221,13 @@
   font-weight: 800;
 }
 #es-nasic.es-nasic .es-cross {
-  background-color: #dbf1ef;
+  background-color: #ffecf9;
   margin-top: -5px;
 }
 #es-nasic.es-nasic .es-cross__title {
   margin: 0;
   padding: 0;
-  color: #df0586;
+  color: #27b0e6;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
@@ -279,7 +279,7 @@
   font-size: 25px;
 }
 #es-nasic.es-nasic .es-cross__usage {
-  color: #df0586;
+  color: #27b0e6;
   font-weight: 800;
   font-size: 20px;
   text-align: center;
@@ -325,7 +325,7 @@
 #es-nasic.es-nasic .es-footer {
   padding: 20px;
   margin-top: -10px;
-  background-color: #df0586;
+  background-color: #27b0e6;
 }
 #es-nasic.es-nasic .es-footer__claim {
   font-size: 14px;

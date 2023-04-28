@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-$es-main-color:#df0586;
+$es-main-color: #27b0e6; ;
 $es-teal:#029187;
-$es-dark-main: #ad0563;
+$es-pink: #df0586;
+// $es-dark-main: #ad0563;
 $es-blue: #2ebdec;
-$es-grey: #dbf1ef;
+$es-grey: #ffecf9;
 
 @keyframes es-pulse{
     0%{
@@ -151,7 +152,7 @@ $es-grey: #dbf1ef;
             padding: 20px;
             max-width: 320px;
             text-align: center;
-            background-color: $es-dark-main;
+            background-color: $es-pink;
             clip-path: polygon(0 1%, 100% 0%, 89% 100%, 5% 100%);
             &--dark{
                 margin-bottom: -20px;
@@ -208,7 +209,7 @@ $es-grey: #dbf1ef;
         }
         &__number{
             background-color: #fff;
-            color: $es-main-color;
+            color: $es-pink;
             padding: 5px 11px;
             margin-right: 20px;
             text-align: center;
