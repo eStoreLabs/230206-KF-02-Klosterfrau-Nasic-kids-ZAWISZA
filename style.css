@@ -216,9 +216,11 @@
 #es-nasic.es-nasic .es-ingr__desc {
   transform: rotate(-5deg);
   color: #029187;
+  font-style: italic;
 }
 #es-nasic.es-nasic .es-ingr__desc span {
   font-weight: 800;
+  font-style: normal;
 }
 #es-nasic.es-nasic .es-cross {
   background-color: #ffecf9;
@@ -227,7 +229,7 @@
 #es-nasic.es-nasic .es-cross__title {
   margin: 0;
   padding: 0;
-  color: #27b0e6;
+  color: #029187;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
@@ -266,10 +268,8 @@
 }
 #es-nasic.es-nasic .es-cross__textCtn--kids {
   background-image: url(./img/blue-bg.png);
-  flex-direction: column;
-  justify-content: flex-start;
-  top: -40px;
-  left: -40px;
+  background-position: bottom;
+  margin-top: -40px;
 }
 #es-nasic.es-nasic .es-cross__text {
   font-weight: 800;
@@ -277,9 +277,11 @@
 }
 #es-nasic.es-nasic .es-cross__text span {
   font-size: 25px;
+  margin-right: 10px;
+  font-style: italic;
 }
 #es-nasic.es-nasic .es-cross__usage {
-  color: #27b0e6;
+  color: #df0586;
   font-weight: 800;
   font-size: 20px;
   text-align: center;
@@ -320,7 +322,7 @@
   margin-bottom: -30px;
 }
 #es-nasic.es-nasic .es-cross__stars {
-  margin-right: 50px;
+  margin-right: 150px;
 }
 #es-nasic.es-nasic .es-footer {
   padding: 20px;
@@ -349,9 +351,9 @@
   }
   #es-nasic.es-nasic .es-kv__heroCtn {
     display: block;
+    padding-top: 5rem;
   }
   #es-nasic.es-nasic .es-kv__contentCtn {
-    margin-left: -200px;
     margin-bottom: 100px;
   }
   #es-nasic.es-nasic .es-kv__title {

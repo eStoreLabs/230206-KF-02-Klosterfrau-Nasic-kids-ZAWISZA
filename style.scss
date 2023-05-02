@@ -48,6 +48,7 @@ $es-grey: #ffecf9;
     }
 }
 
+
 #es-nasic.es-nasic{
     
     font-family: 'Poppins', sans-serif;
@@ -231,8 +232,10 @@ $es-grey: #ffecf9;
         &__desc{
             transform: rotate(-5deg);
             color: $es-teal;
+            font-style: italic;
             span{
                 font-weight: 800;
+                font-style: normal;
             }
         }
     }
@@ -242,7 +245,7 @@ $es-grey: #ffecf9;
         &__title{
             margin: 0;
             padding: 0;
-            color: $es-main-color;
+            color: $es-teal;
             font-size: 30px;
             font-weight: 800;
             text-align: center;
@@ -280,10 +283,8 @@ $es-grey: #ffecf9;
             left: -20px;
             &--kids{
                 background-image: url(./img/blue-bg.png);
-                flex-direction: column;
-                justify-content: flex-start;
-                top:-40px;
-                left: -40px;
+                background-position: bottom;
+                margin-top: -40px;
             }
         }
         &__text{
@@ -291,10 +292,12 @@ $es-grey: #ffecf9;
             margin: 0;
             span{
                 font-size: 25px;
+                margin-right: 10px;
+                font-style: italic;
             }
         }
         &__usage{
-            color: $es-main-color;
+            color: $es-pink;
             font-weight: 800;
             font-size: 20px;
             text-align: center;
@@ -334,7 +337,7 @@ $es-grey: #ffecf9;
             margin-bottom: -30px;
         }
         &__stars{
-            margin-right: 50px;
+            margin-right: 150px;
         }
     }
     .es-footer{
@@ -363,10 +366,10 @@ $es-grey: #ffecf9;
         flex-direction: row;
         align-items: flex-end;
         &__heroCtn{
-            display: block; 
+            display: block;
+            padding-top: 5rem; 
         }
         &__contentCtn{
-            margin-left: -200px;
             margin-bottom: 100px;
             
         }
