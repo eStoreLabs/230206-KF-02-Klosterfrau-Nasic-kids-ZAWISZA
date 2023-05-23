@@ -74,6 +74,9 @@ $es-grey: #ffecf9;
     img{
         max-width: 100%;
     }
+    em {
+        font-style: normal;
+    }
     .es-kv{
         min-height: 450px;
         display: flex;
@@ -204,7 +207,7 @@ $es-grey: #ffecf9;
             }
         }
         &__desc{
-            span{
+            em {
                 font-weight: 800;
             }
         }
@@ -233,7 +236,7 @@ $es-grey: #ffecf9;
             transform: rotate(-5deg);
             color: $es-teal;
             font-style: italic;
-            span{
+            em {
                 font-weight: 800;
                 font-style: normal;
             }
@@ -290,7 +293,7 @@ $es-grey: #ffecf9;
         &__text{
             font-weight: 800;
             margin: 0;
-            span{
+            em {
                 font-size: 25px;
                 margin-right: 10px;
                 font-style: italic;
@@ -301,7 +304,7 @@ $es-grey: #ffecf9;
             font-weight: 800;
             font-size: 20px;
             text-align: center;
-            span{
+            em {
                 font-size: 16px;
             }
         }
@@ -452,8 +455,9 @@ $es-grey: #ffecf9;
         &__text{
             font-weight: 800;
             margin: 0;
-            span{
+            em {
                 font-size: 40px;
+                font-style: normal;
             }
         }
     }
